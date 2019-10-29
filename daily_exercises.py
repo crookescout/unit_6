@@ -65,7 +65,7 @@ def remove_duplicates(nums):
     for x in range(len(nums)):
         for y in range(x + 1, len(nums)):
             if nums[x] == nums[y]:
-                del y
+                del nums[y]
 
 
 print(remove_duplicates([100, 2, 3, 4, 5, 100]))
