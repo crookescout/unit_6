@@ -49,7 +49,6 @@ def has22(nums):
 print(has22([1, 2, 3, 4, 5, 2]))
 
 
-
 def is_sorted(nums):
     while True:
         for x in range(1, len(nums)):
@@ -61,11 +60,37 @@ def is_sorted(nums):
 is_sorted([1, 2, 1, 2])
 
 
+list = []
+
+
 def remove_duplicates(nums):
-    for x in range(len(nums)):
-        for y in range(x + 1, len(nums)):
-            if nums[x] == nums[y]:
-                del nums[y]
+    removed = []
+    for x in (nums):
+        if x not in removed:
+            removed.append(x)
+    return removed
 
 
-print(remove_duplicates([100, 2, 3, 4, 5, 100]))
+print(remove_duplicates([1, 2, 3, 4, 5, 5, 6]))
+
+
+def get_max(nums):
+    biggest_num = nums[0]
+    for x in nums:
+        if x > biggest_num:
+            biggest_num = x
+    return biggest_num
+
+
+print(get_max([1, 2, 3, 4, 5, 6]))
+
+
+def get_min(nums):
+    smallest_num = nums[0]
+    for x in nums:
+        if x < smallest_num:
+            smallest_num = x
+    return smallest_num
+
+
+print(get_min([-15, 2, 3, 4, 5, 6]))
