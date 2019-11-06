@@ -1,4 +1,5 @@
-# Scout Crooke, 11/5/19, This program
+# Scout Crooke, 11/5/19,
+# This program finds all the prime numbers in a list of numbers from 2 to the user's given number
 
 
 def list_nums():
