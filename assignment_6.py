@@ -11,12 +11,14 @@ def list_nums():
 
 def prime_list(num_list):
     primes = []
-    num = num_list[0]
-    primes.append(num_list[0])
-    for x in num_list:
-        if x % num[0] == 0:
-            num_list.remove(x)
-    return prime_list(num_list)
+    while len(num_list) > 0:
+        num = num_list[0]
+        primes.append(num_list[0])
+        for x in num_list:
+            if x % num == 0:
+                num_list.remove(x)
+            print(num_list)
+        return primes
 
 
 def main():
