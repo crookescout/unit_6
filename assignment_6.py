@@ -2,6 +2,10 @@
 
 
 def list_nums():
+    """
+    This function gets the maximum number from the user and generates a list from 2 to that maximum number
+    :return: a list from 2 to the user's maximum number
+    """
     max_num = int(input("What is the maximum number you would like to use?"))
     num_list = []
     for x in range(2, max_num + 1):
@@ -10,6 +14,12 @@ def list_nums():
 
 
 def prime_list(num_list):
+    """
+    This function loops through the list from 2 to the maximum number and finds the prime numbers and eliminates
+    the numbers that are not prime numbers (multiples of the prime numbers).
+    :param num_list:
+    :return: the list of prime numbers
+    """
     primes = []
     while len(num_list) > 0:
         num = num_list[0]
@@ -18,7 +28,7 @@ def prime_list(num_list):
             if x % num == 0:
                 num_list.remove(x)
             print(num_list)
-        return primes
+    return primes
 
 
 def main():
