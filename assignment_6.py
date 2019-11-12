@@ -28,7 +28,6 @@ def prime_list(num_list):
         for x in num_list:
             if x % num == 0:
                 num_list.remove(x)
-            print(num_list)
     return primes
 
 
